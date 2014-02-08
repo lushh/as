@@ -1,0 +1,65 @@
+/*common*/
+html {_background-image:url(about:blank);_background-attachment: fixed;}
+body {
+    font-family: verdana,arial,helvetica,sans-serif;
+}
+
+
+a:link {color: #666;}
+a:visited {color: #666;}
+a:hover {color: #bd0a01}
+a:active {color: #666;}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {*zoom:1;}
+
+/*content*/
+.content {width: 960px;margin: 0 auto;}
+
+/*top*/
+.top {}
+.top .left {float: left;}
+.top .left a{display: block;text-decoration: none;color: #0a336c}
+.top .left a img{display: block;width: 150px;height: 116px;position: relative;left: 15px;}
+.top .left a h1{line-height: 30px;}
+
+.top .right {float: right;}
+.top .right .nav{ padding:0 20px; height: 146px; line-height: 146px; background:url(../images/nav_bg.png) repeat-x;  position:relative; z-index:1;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;  }
+.top .right .nav a{ color:#fff;  }
+.top .right .nav .nLi{ float:left;  position:relative; display:inline;  }
+.top .right .nav .nLi h3{ float:left;  }
+.top .right .nav .nLi h3 a{ display:block; padding:0 20px; font-size:14px; font-weight:bold;  }
+.top .right .nav .sub{ display:none;left:0; top: 146px;  position:absolute; background:#bbbbb8;  line-height:26px; padding:5px 0;width: 300px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;  }
+.top .right .nav .sub li{ zoom:1; }
+.top .right .nav .sub a{ display:block; padding:0 10px; }
+.top .right .nav .sub a:hover{ background:#6d6d6d; color:#fff;  }
+.top .right .nav .on h3 a{ background:url(../images/nav_li_on_bg.png) repeat-x; color:#fff;   }
+
+/*banner*/
+.banner {position: relative;top: 25px;}
+.banner .slideBox{ width:960px; height:540px; overflow:hidden; position:relative; }
+.banner .slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.banner .slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.banner .slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.banner .slideBox .hd ul li.on{ background:#f00; color:#fff; }
+.banner .slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.banner .slideBox .bd li{ zoom:1; vertical-align:middle; }
+.banner .slideBox .bd img{ width:960px; height:540px; display:block;  }
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(../images/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+.slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+.slideBox .prev:hover,
+.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
+
+
